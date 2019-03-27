@@ -21,7 +21,7 @@
       <mat-label>Account Group</mat-label>
       <mat-select class="form-control" formControlName="accountGroup">
         <mat-option>None</mat-option>
-        <mat-option *ngFor="let group of group" [value]="group">{{group}}</mat-option>
+        <mat-option *ngFor="let group of group" [value]="group.account_name">{{group.account_name}}</mat-option>
       </mat-select>
     </div>
   <button class="btn" type="submit">Print</button>
