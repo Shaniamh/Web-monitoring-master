@@ -1,0 +1,55 @@
+.jumbotron-fluid {
+    padding:0;
+}
+header {
+  margin-top: 0px;
+}
+img{
+  width:100%;
+  max-width: 100%;
+  height:auto;
+}
+.card-img-top{
+  width:100%;
+  height:auto;
+}
+
+#site-title {
+    max-width:150px;
+}
+#size-banner{
+    height:50px;
+    padding-top:10px;
+}
+header .display-2 {
+    font-size: 10%;
+    font-weight:50;
+}
+@media (min-width: 48em) { /* -md- and above */
+  #size-banner{
+      height:750px;
+      padding-top:150px;
+  }
+  header .display-2 {
+    font-size: 500%;
+    text-align: left;
+  }
+  header .display-3 {
+    font-size: 250%;
+    text-align: left;
+  }
+  .banner-tag-line {
+    font-size:180%;
+}
+}
+
+.parallax {
+    text-align:left;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-attachment:fixed!important;
+    overflow:hidden;
+    background-image: url(./images/kafka.png);
+}
+

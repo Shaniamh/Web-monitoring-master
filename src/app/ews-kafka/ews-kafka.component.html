@@ -1,0 +1,39 @@
+<html>
+<header>
+  <div class="jumbotron jumbotron-fluid" id="banner">
+    <div class="parallax text-left">
+      <div class="parallax-pattern-overlay">
+        <div class="container text-center" id="size-banner">
+          <h2 class="display-3">EWS Monitoring Kafka</h2>
+          <form id="form-horizontal" [formGroup]="date"  (ngSubmit)="onSubmit()">
+              <mat-form-field class="example-full-width">
+                <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker" class="form-control" formControlName="date">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker touchUi #picker></mat-datepicker>
+              </mat-form-field>
+              <button class="btn btn-primary" [routerLink]="['/ews-kafka']">
+                Show
+              </button>
+            </form>
+          <table border="1">
+              <tr>
+                <th style="padding: 10px">Date</th>
+                <th style="padding: 10px">Status</th>
+              </tr>
+              <tr>
+                <td style="padding: 5px">
+                  <p  *ngFor="let status of statuses">{{status.date}}</p>
+                </td>
+                <td style="padding: 5px">
+                  <p  *ngFor="let status of statuses">{{status.dataKafka}}</p>
+                </td>
+              </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<body>
+</body>
+</html>
