@@ -24,7 +24,7 @@ header {
     }
     header .header-content h1 {
       position: absolute;
-      top: 50%;
+      top: 85%;
       left: 12%;
       -webkit-transform: translateY(-30%);
       -ms-transform: translateY(-30%);
@@ -51,6 +51,7 @@ header {
     }
     .formStart{
       margin-left: 10%;
+      margin-top: 3%;
       width: 30%;
       margin-bottom: 4px;
       font-weight: 500;
@@ -192,12 +193,59 @@ header {
     }
     header .header-content h1{
       position: absolute;
-      top: 25%;
-      left: 20%;
+      top: 70%;
+      left: 27%;
       font-weight: 700;
       margin-top: -10px;
       margin-bottom: 0;
-      font-size: 27px;
+      font-size: 20px;
     }
+    .form-control:focus {
+      border-color: #f9a11b;
+      background-color: transparent;
+    }
+
+    .form-control:hover {
+      border-color: #f9a11b;
+      background-color: transparent;
+    }
+
+    .form-control{
+      border-radius: 2.1875rem;
+    }
+    .formStart{
+      margin-left: 15%;
+      margin-top: 3%;
+      width: 70%;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+    .formEnd{
+      margin-left: 15%;
+      width: 70%;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+    .formAccount{
+      margin-left: 15%;
+      width: 70%;
+      font-weight: 500;
+    }
+    .btn{
+      margin-left: 23%;
+      width: 50%;
+      margin-top: 7%;
+      padding: .5rem 2.5rem;
+      font-size: .95rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      background: #f9a11b;
+      border-radius: 2.1875rem;
+    }
+    .btn:focus, .btn:hover{
+      background: #3a4099;
+    }
+
   }
   
