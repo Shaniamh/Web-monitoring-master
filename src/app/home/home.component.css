@@ -38,8 +38,9 @@ header .header-content {
     margin-bottom: -10px;
   }
   h3 {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 30px;
+    color: #f9a11b;
   }
 }
 

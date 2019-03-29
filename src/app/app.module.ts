@@ -22,6 +22,7 @@ import {MatNativeDateModule}	from	'@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatInputModule} from '@angular/material';
+import { EwsIssueComponent } from './ews-issue/ews-issue.component';
 
 
 
@@ -33,7 +34,8 @@ import {MatInputModule} from '@angular/material';
     EwsKafkaComponent,
     EwsHbaseComponent,
     WriteCsvComponent,
-    FooterComponent
+    FooterComponent,
+    EwsIssueComponent
   ],
   imports: [
     //shania
