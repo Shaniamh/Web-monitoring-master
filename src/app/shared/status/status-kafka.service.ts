@@ -7,12 +7,12 @@ import { Observable } from 'rxjs';
 })
 export class StatusKafkaService {
 
-  public API = '//localhost:8080';
-  public CAR_API = this.API + '/usercar';
+  public API = '//192.168.20.222:8991/kp-pens';
+  public CAR_API = this.API + '/sql';
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<any> {
-    return this.http.get(this.API + '/usercar');
+    return this.http.get(this.API + '/sql');
   }
 
   get(date: string) {

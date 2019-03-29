@@ -1,55 +1,255 @@
-.jumbotron-fluid {
-    padding:0;
-}
 header {
-  margin-top: 0px;
-}
-img{
-  width:100%;
-  max-width: 100%;
-  height:auto;
-}
-.card-img-top{
-  width:100%;
-  height:auto;
-}
-
-#site-title {
-    max-width:150px;
-}
-#size-banner{
-    height:50px;
-    padding-top:10px;
-}
-header .display-2 {
-    font-size: 10%;
-    font-weight:50;
-}
-@media (min-width: 48em) { /* -md- and above */
-  #size-banner{
-      height:750px;
-      padding-top:150px;
-  }
-  header .display-2 {
-    font-size: 500%;
-    text-align: left;
-  }
-  header .display-3 {
-    font-size: 250%;
-    text-align: left;
-  }
-  .banner-tag-line {
-    font-size:180%;
-}
+  overflow: hidden;
+  position: auto;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('./images/kafka.jpg');
+  color: #3a4099;
 }
 
-.parallax {
-    text-align:left;
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-attachment:fixed!important;
-    overflow:hidden;
-    background-image: url(./images/kafka.png);
+header .header-content {
+  position: relative;
+  padding: 50px 15px 100px;
+  width: 100%;
 }
 
+/* untuk dekstop higher resolution */
+@media (min-width: 1281px) {
+  header {
+    height: 90%;
+    width: 100%;
+  }
+  header .header-content{
+    position: absolute;
+    top: 12%;
+    left: 3%;
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+    padding: 0 50px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size:40px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: 10%;;
+  }
+
+  table {
+    background: white;
+    font-weight: 600;
+    width: 88%;
+    font-size: 20%;
+    margin: 6%;
+  }
+
+  .example-container {
+    background: #cfd8e1;
+    margin-top: 7%;
+    /* background: rgba(249, 161, 27, 0.5); */
+    height: 70%;
+    overflow: auto;
+    width: 40%;
+    margin-left: 6%;
+    border-radius: 2em;
+  }
+ 
+
+}
+
+/* untuk device laptop dan dekstop */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  header {
+    min-height: 100%;
+  }
+  header .header-content{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+    padding: 0 50px;
+  }
+  h1 {
+    font-weight: 700;
+    font-size:40px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: -10px;
+  }
+  
+  h1 {
+    font-weight: 700;
+    font-size:40px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: 10%;;
+  }
+
+  table {
+    background: white;
+    margin-top: 5%;
+    font-weight: 600;
+    margin-left: 5%;
+    width: 90%;
+    font-size: 20%;
+    margin-right: 5%;
+  }
+
+  .example-container {
+    background: #f9a11b;
+    margin-top: 7%;
+    /* background: rgba(249, 161, 27, 0.5); */
+    height: 70%;
+    overflow: auto;
+    width: 35%;
+    margin-left: 6%;
+  }
+ 
+}
+
+/* untuk device tablet dan ipad potrait*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    min-height: 90%;
+    width: 100%;
+  }
+  header .header-content{
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    transform: translateY(-30%);
+    padding: 0 50px;
+  }
+  h1 {
+    font-weight: 700;
+    font-size:30px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: -10px;
+  }
+  
+  h1 {
+    font-weight: 700;
+    font-size:40px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: 10%;;
+  }
+
+  table {
+    background: white;
+    margin-top: 5%;
+    font-weight: 600;
+    margin-left: 5%;
+    width: 90%;
+    font-size: 20%;
+    margin-right: 5%;
+  }
+
+  .example-container {
+    background: #f9a11b;
+    margin-top: 7%;
+    /* background: rgba(249, 161, 27, 0.5); */
+    height: 70%;
+    overflow: auto;
+    width: 35%;
+    margin-left: 6%;
+  }
+ 
+}
+
+/* untuk low resolutions tablet, mobiles landscape */
+@media (min-width: 481px) and (max-width: 767px) {
+  header {
+    min-height: 90%;
+    width: 100%;
+  }
+  header .header-content{
+    position: absolute;
+    left: 15%;
+  }
+  h1 {
+    font-weight: 700;
+    font-size:35px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  }
+ 
+  
+  h1 {
+    font-weight: 700;
+    font-size:40px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: 10%;;
+  }
+
+  table {
+    background: white;
+    margin-top: 5%;
+    font-weight: 600;
+    margin-left: 5%;
+    width: 90%;
+    font-size: 20%;
+    margin-right: 5%;
+  }
+
+  .example-container {
+    background: #f9a11b;
+    margin-top: 7%;
+    /* background: rgba(249, 161, 27, 0.5); */
+    height: 70%;
+    overflow: auto;
+    width: 35%;
+    margin-left: 6%;
+  }
+}
+
+/* untuk mobile potrait */
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    overflow: inherit;
+    min-height: 85%;
+    width: 100%;
+  }
+  header .header-content {
+    top: 0%;
+    position: absolute;
+    left: 12%;
+  }
+  h1 {
+    font-weight: 700;
+    font-size:30px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: -10px;
+  }
+
+  
+  h1 {
+    font-weight: 700;
+    font-size:30px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: 10%;;
+  }
+
+  table {
+    background: white;
+    font-weight: 600;
+    width: 90%;
+    font-size: 20%;
+    margin: 5%;
+  }
+
+  .example-container {
+    background: #f9a11b;
+    margin-top: 25%;
+    height: 30%;
+    overflow: auto;
+    width: 87%;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+}

@@ -9,27 +9,29 @@ import { StatusKafkaService } from '../shared/status/status-kafka.service';
   providers: [DatePipe]
 })
 export class EwsKafkaComponent implements OnInit {
-
-  date: FormGroup;
+  submit: FormGroup;
   dateString: any;
   statuses: Array<any>;
-  minDate = new Date(2000, 0, 1);
-  maxDate = new Date();
+  todayDate = new Date();
+  displayedColumns = ['DATE', 'STATUS'];
 
 constructor(private statusKafkaService : StatusKafkaService,public datepipe: DatePipe) {
-  this.date = new FormGroup({
-    date: new FormControl()
+  this.submit = new FormGroup({
   });
  
  }
  onSubmit(): void {
-  console.log(this.date.value);
-  this.dateString = this.date.get('date').value;
-  let formatDate =this.datepipe.transform(this.dateString, 'yyyyMMdd');
+  let formatDate =this.datepipe.transform(this.todayDate, 'yyyyMMdd');
   this.statusKafkaService.findByDate(formatDate).subscribe(data => {
     this.statuses = data;
   });
 }
 ngOnInit(){
+  let formatDate =this.datepipe.transform(this.todayDate, 'yyyyMMdd');
+  this.statusKafkaService.findByDate(formatDate).subscribe(data => {
+    this.statuses = data;
+  });
 }
+
+
 }

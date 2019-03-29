@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AccountGroupService {
-  public API = '//localhost:8991/get-csv-hbase';
-  public ACCOUNT_API = this.API + '/sql/';
+  public API = '//192.168.20.222:8991/kp-pens';
+  public ACCOUNT_API = this.API + '/account/';
 
   constructor(private http: HttpClient) { }
 

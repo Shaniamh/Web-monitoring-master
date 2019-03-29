@@ -7,7 +7,7 @@ header {
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url('./images/bg1.jpg');
+    background-image: url('./images/bg_csv.jpg');
     color: #3a4099;
   }
   header .header-content {
@@ -19,13 +19,13 @@ header {
   /* untuk dekstop higher resolution */
   @media (min-width: 1281px) {
     header {
-      min-height: 90%;
+      min-height: 80%;
       width: 100%;
     }
     header .header-content h1 {
       position: absolute;
-      top: 85%;
-      left: 12%;
+      top: 60%;
+      left: 5%;
       -webkit-transform: translateY(-30%);
       -ms-transform: translateY(-30%);
       transform: translateY(-30%);
@@ -33,8 +33,8 @@ header {
       font-weight: 700;
       margin-top: -10px;
       margin-bottom: 0;
-      font-size: 30px;
-      font-family: system-ui;
+      font-size: 50px;
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     }
     .form-control:focus {
       border-color: #f9a11b;
@@ -50,25 +50,24 @@ header {
       border-radius: 2.1875rem;
     }
     .formStart{
-      margin-left: 10%;
-      margin-top: 3%;
+      margin-left: 9%;
       width: 30%;
       margin-bottom: 4px;
       font-weight: 500;
     }
     .formEnd{
-      margin-left: 10%;
+      margin-left: 9%;
       width: 30%;
       margin-bottom: 4px;
       font-weight: 500;
     }
     .formAccount{
-      margin-left: 10%;
+      margin-left: 9%;
       width: 30%;
       font-weight: 500;
     }
     .btn{
-      margin-left: 15%;
+      margin-left: 14%;
       width: 20%;
       margin-top: 2%;
       padding: .5rem 2.5rem;
@@ -78,8 +77,9 @@ header {
       color: #fff;
       background: #f9a11b;
       border-radius: 2.1875rem;
+      cursor: pointer;
     }
-    .btn:focus, .btn:hover{
+    .btn:hover{
       background: #3a4099;
     }
 
@@ -92,8 +92,8 @@ header {
     }
     header .header-content h1 {
       position: absolute;
-      top: 110%;
-      left: 10%;
+      top: 50%;
+      left: 6%;
       -webkit-transform: translateY(-30%);
       -ms-transform: translateY(-30%);
       transform: translateY(-30%);
@@ -101,7 +101,7 @@ header {
       font-weight: 700;
       margin-top: -10px;
       margin-bottom: 0;
-      font-size: 35px;
+      font-size: 40px;
     }
     .form-control:focus {
       border-color: #f9a11b;
@@ -116,7 +116,7 @@ header {
     }
     .formStart{
       margin-left: 10%;
-      margin-top: 7%;
+      margin-top: 2%;
       width: 30%;
       margin-bottom: 4px;
       font-weight: 500;
@@ -143,8 +143,9 @@ header {
       color: #fff;
       background: #f9a11b;
       border-radius: 2.1875rem;
+      cursor: pointer;
     }
-    .btn:focus, .btn:hover{
+    .btn:hover{
       background: #3a4099;
     }
   }
@@ -157,14 +158,14 @@ header {
     }
     header .header-content h1{
       position: absolute;
-      top: 100%;
+      top: 60%;
       left: 30%;
       transform: translateY(-30%);
       padding: 0 50px;
       font-weight: 700;
       margin-top: -10px;
       margin-bottom: 0;
-      font-size: 27px;
+      font-size: 30px;
     }
     .form-control:focus {
       border-color: #f9a11b;
@@ -181,7 +182,7 @@ header {
     }
     .formStart{
       margin-left: 15%;
-      margin-top: 10%;
+      margin-top: 3%;
       width: 70%;
       margin-bottom: 4px;
       font-weight: 500;
@@ -208,8 +209,9 @@ header {
       color: #fff;
       background: #f9a11b;
       border-radius: 2.1875rem;
+      cursor: pointer;
     }
-    .btn:focus, .btn:hover{
+    .btn:hover{
       background: #3a4099;
     }
 
@@ -224,11 +226,11 @@ header {
     header .header-content h1{
       position: absolute;
       top: 90%;
-      left: 30%;
+      left: 15%;
       font-weight: 700;
       margin-top: -10px;
       margin-bottom: 0;
-      font-size: 27px;
+      font-size: 30px;
     }
     .form-control:focus {
       border-color: #f9a11b;
@@ -272,8 +274,9 @@ header {
       color: #fff;
       background: #f9a11b;
       border-radius: 2.1875rem;
+      cursor: pointer;
     }
-    .btn:focus, .btn:hover{
+    .btn:hover{
       background: #3a4099;
     }
   }
@@ -287,11 +290,10 @@ header {
     header .header-content h1{
       position: absolute;
       top: 70%;
-      left: 27%;
+      left: 15%;
       font-weight: 700;
       margin-top: -10px;
-      margin-bottom: 0;
-      font-size: 20px;
+      font-size: 30px;
     }
     .form-control:focus {
       border-color: #f9a11b;
@@ -308,7 +310,7 @@ header {
     }
     .formStart{
       margin-left: 15%;
-      margin-top: 3%;
+      margin-top: 5%;
       width: 70%;
       margin-bottom: 4px;
       font-weight: 500;
@@ -335,8 +337,9 @@ header {
       color: #fff;
       background: #f9a11b;
       border-radius: 2.1875rem;
+      cursor: pointer;
     }
-    .btn:focus, .btn:hover{
+    .btn:hover{
       background: #3a4099;
     }
 

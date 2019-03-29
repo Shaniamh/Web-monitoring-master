@@ -4,26 +4,26 @@
   </div>
   <form [formGroup]="time" (ngSubmit)="onSubmit()">
     <div class='formStart'>
-  <mat-label>Start Time</mat-label>
+  <mat-label>Choose Start Time</mat-label>
   <mat-select class="form-control" formControlName="startTime">
     <mat-option>None</mat-option>
     <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
   </mat-select>
 </div>
     <div class="formEnd">
-    <mat-label>End Time</mat-label>
+    <mat-label>Choose End Time</mat-label>
     <mat-select class="form-control" formControlName="endTime">
       <mat-option>None</mat-option>
       <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
     </mat-select>
   </div>
   <div class="formAccount">
-      <mat-label>Account Group</mat-label>
+      <mat-label> Choose Account Group</mat-label>
       <mat-select class="form-control" formControlName="accountGroup">
         <mat-option>None</mat-option>
         <mat-option *ngFor="let group of group" [value]="group.account_name">{{group.account_name}}</mat-option>
       </mat-select>
     </div>
-  <button class="btn" type="submit">Print</button>
+  <button class="btn" type="submit"><i class="fa fa-send"></i> Send to Telegram</button>
 </form>
 </header>

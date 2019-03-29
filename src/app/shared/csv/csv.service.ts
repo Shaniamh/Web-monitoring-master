@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class CsvService {
-  public API = '//localhost:8991';
+  public API = '//192.168.20.99:8991';
   public CSV_API = this.API + '/get-csv-hbase/hbase';
   constructor(private http: HttpClient) { }
 
