@@ -1,1 +1,23 @@
-<h1> Coming soon ! </h1>
+<header>
+    <div class="header-content">
+      <h1>Monitoring Issue Twitter</h1>
+    </div>
+    <form [formGroup]="time" (ngSubmit)="onSubmit()">
+      <div class='formStart'>
+    <mat-label>Choose Date</mat-label>
+    <mat-select class="form-control" formControlName="startTime">
+      <mat-option>None</mat-option>
+      <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+    </mat-select>
+  </div>
+      <div class="formEnd">
+      <mat-label>Choose Time</mat-label>
+      <mat-select class="form-control" formControlName="endTime">
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+      </mat-select>
+    </div>
+    <button class="btn" type="submit"><i class="fa fa-send"></i> Send to Telegram</button>
+  </form>
+  </header>
+  

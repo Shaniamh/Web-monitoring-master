@@ -1,7 +1,324 @@
-h1{
-    text-align: center;
-    margin: 10%;
-    font-weight: 700;
-    font-size: 80px;
+header {
+    position: auto;
+    width: 100%;
+    min-height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background: wheat;
     color: #3a4099;
-}
+  }
+  header .header-content {
+    position: relative;
+    padding: 70px 100px;
+    width: 100%;
+  }
+
+  /* untuk dekstop higher resolution */
+  @media (min-width: 1281px) {
+    header {
+      min-height: 80%;
+      width: 100%;
+    }
+    header .header-content h1 {
+      position: absolute;
+      top: 65%;
+      left: 55%;
+      -webkit-transform: translateY(-30%);
+      -ms-transform: translateY(-30%);
+      transform: translateY(-30%);
+      padding: 0 50px;
+      font-weight: 700;
+      font-size: 50px;
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+    .form-control:focus {
+      border-color: #f9a11b;
+      background-color: transparent;
+    }
+
+    .form-control:hover {
+      border-color: #f9a11b;
+      background-color: transparent;
+    }
+
+    .form-control{
+      border-radius: 2.1875rem;
+    }
+    .formStart{
+      margin-left:59%;
+      width: 30%;
+      margin-top: 5%;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+    .formEnd{
+      margin-left: 59%;
+      width: 30%;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+
+    .btn{
+      margin-left: 59%;
+      width: 20%;
+      margin-top: 2%;
+      padding: .5rem 2.5rem;
+      font-size: .95rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      background: #f9a11b;
+      border-radius: 2.1875rem;
+      cursor: pointer;
+    }
+    .btn:hover{
+      background: #3a4099;
+    }
+
+  }
+  
+  /* untuk device laptop dan dekstop */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    header {
+      min-height: 100%;
+    }
+    header .header-content h1 {
+      position: absolute;
+      top: 65%;
+      left: 60%;
+      -webkit-transform: translateY(-30%);
+      -ms-transform: translateY(-30%);
+      transform: translateY(-30%);
+      padding: 0 50px;
+      font-weight: 700;
+      margin-bottom: 0;
+      font-size: 40px;
+    }
+    .form-control:focus {
+      border-color: #f9a11b;
+      background-color: transparent;
+    }
+    .form-control:hover {
+      border-color: #f9a11b;
+      background-color: transparent;
+    }
+    .form-control{
+      border-radius: 2.1875rem;
+    }
+    .formStart{
+        margin-left:59%;
+        width: 30%;
+        margin-top: 5%;
+        margin-bottom: 4px;
+        font-weight: 500;
+      }
+      .formEnd{
+        margin-left: 59%;
+        width: 30%;
+        margin-bottom: 4px;
+        font-weight: 500;
+      }
+  
+      .btn{
+        margin-left: 59%;
+        width: 20%;
+        margin-top: 2%;
+        padding: .5rem 2.5rem;
+        font-size: .95rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+        background: #f9a11b;
+        border-radius: 2.1875rem;
+        cursor: pointer;
+      }
+    .btn:hover{
+      background: #3a4099;
+    }
+  }
+
+  /* untuk device tablet dan ipad potrait*/
+  @media (min-width: 768px) and (max-width: 1024px) {
+    header {
+      min-height: 90%;
+      width: 100%;
+    }
+    header .header-content h1{
+      position: absolute;
+      top: 60%;
+      left: 25%;
+      transform: translateY(-30%);
+      padding: 0 50px;
+      font-weight: 700;
+      margin-top: -10px;
+      margin-bottom: 0;
+      font-size: 25px;
+    }
+    .form-control:focus {
+      border-color: #f9a11b;
+      background-color: transparent;
+    }
+
+    .form-control:hover {
+      border-color: #f9a11b;
+      background-color: transparent;
+    }
+
+    .form-control{
+      border-radius: 2.1875rem;
+    }
+    .formStart{
+      margin-left: 15%;
+      margin-top: 3%;
+      width: 70%;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+    .formEnd{
+      margin-left: 15%;
+      width: 70%;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+
+    .btn{
+      margin-left: 23%;
+      width: 50%;
+      margin-top: 5%;
+      padding: .5rem 2.5rem;
+      font-size: .95rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      background: #f9a11b;
+      border-radius: 2.1875rem;
+      cursor: pointer;
+    }
+    .btn:hover{
+      background: #3a4099;
+    }
+
+  }
+
+  /* untuk low resolutions tablet, mobiles landscape */
+  @media (min-width: 481px) and (max-width: 767px) {
+    header {
+      min-height: 90%;
+      width: 100%;
+    }
+    header .header-content h1{
+      position: absolute;
+      top: 90%;
+      left: 27%;
+      font-weight: 700;
+      margin-top: -10px;
+      margin-bottom: 0;
+      font-size: 25px;
+    }
+    .form-control:focus {
+      border-color: #f9a11b;
+      background-color: transparent;
+    }
+
+    .form-control:hover {
+      border-color: #f9a11b;
+      background-color: transparent;
+    }
+
+    .form-control{
+      border-radius: 2.1875rem;
+    }
+    .formStart{
+      margin-left: 15%;
+      margin-top: 10%;
+      width: 70%;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+    .formEnd{
+      margin-left: 15%;
+      width: 70%;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+ 
+    .btn{
+      margin-left: 23%;
+      width: 50%;
+      margin-top: 5%;
+      padding: .5rem 2.5rem;
+      font-size: .95rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      background: #f9a11b;
+      border-radius: 2.1875rem;
+      cursor: pointer;
+    }
+    .btn:hover{
+      background: #3a4099;
+    }
+  }
+
+  /* untuk mobile potrait */
+  @media (min-width: 320px) and (max-width: 480px) {
+    header {
+      min-height: 85%;
+      width: 100%;
+    }
+    header .header-content h1{
+      position: absolute;
+      top: 70%;
+      left: 15%;
+      font-weight: 700;
+      font-size: 25px;
+    }
+    .form-control:focus {
+      border-color: #f9a11b;
+      background-color: transparent;
+    }
+
+    .form-control:hover {
+      border-color: #f9a11b;
+      background-color: transparent;
+    }
+
+    .form-control{
+      border-radius: 2.1875rem;
+    }
+    .formStart{
+      margin-left: 15%;
+      margin-top: 5%;
+      width: 70%;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+    .formEnd{
+      margin-left: 15%;
+      width: 70%;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+ 
+    .btn{
+      margin-left: 23%;
+      width: 50%;
+      margin-top: 7%;
+      padding: .5rem 2.5rem;
+      font-size: .95rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      background: #f9a11b;
+      border-radius: 2.1875rem;
+      cursor: pointer;
+    }
+    .btn:hover{
+      background: #3a4099;
+    }
+
+  }
+  

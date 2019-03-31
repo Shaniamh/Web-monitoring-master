@@ -12,8 +12,9 @@ const routes: Routes = [
   {path: 'beranda', component: HomeComponent},
   {path: 'ews-kafka', component: EwsKafkaComponent},
   {path: 'ews-hbase', component: EwsHbaseComponent},
-  {path: 'write-csv', component: WriteCsvComponent},
-  {path: 'ews-issue', component: EwsIssueComponent}
+  {path: 'ews-issue', component: EwsIssueComponent},
+  {path: 'write-csv', component: WriteCsvComponent}
+ 
 ];
 
 @NgModule({
