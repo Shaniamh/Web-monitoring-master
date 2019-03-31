@@ -47,14 +47,14 @@ header {
     .form-control{
       border-radius: 2.1875rem;
     }
-    .formStart{
+    .formDate{
       margin-left:59%;
       width: 30%;
       margin-top: 5%;
       margin-bottom: 4px;
       font-weight: 500;
     }
-    .formEnd{
+    .formTime{
       margin-left: 59%;
       width: 30%;
       margin-bottom: 4px;
@@ -62,7 +62,7 @@ header {
     }
 
     .btn{
-      margin-left: 59%;
+      margin-left: 63%;
       width: 20%;
       margin-top: 2%;
       padding: .5rem 2.5rem;
@@ -108,22 +108,22 @@ header {
     .form-control{
       border-radius: 2.1875rem;
     }
-    .formStart{
-        margin-left:59%;
-        width: 30%;
+    .formDate{
+        margin-left:63%;
+        width: 25%;
         margin-top: 5%;
         margin-bottom: 4px;
         font-weight: 500;
       }
-      .formEnd{
-        margin-left: 59%;
-        width: 30%;
+      .formTime{
+        margin-left: 63%;
+        width: 25%;
         margin-bottom: 4px;
         font-weight: 500;
       }
   
       .btn{
-        margin-left: 59%;
+        margin-left: 65%;
         width: 20%;
         margin-top: 2%;
         padding: .5rem 2.5rem;
@@ -170,14 +170,14 @@ header {
     .form-control{
       border-radius: 2.1875rem;
     }
-    .formStart{
+    .formDate{
       margin-left: 15%;
       margin-top: 3%;
       width: 70%;
       margin-bottom: 4px;
       font-weight: 500;
     }
-    .formEnd{
+    .formTime{
       margin-left: 15%;
       width: 70%;
       margin-bottom: 4px;
@@ -231,14 +231,14 @@ header {
     .form-control{
       border-radius: 2.1875rem;
     }
-    .formStart{
+    .formDate{
       margin-left: 15%;
       margin-top: 10%;
       width: 70%;
       margin-bottom: 4px;
       font-weight: 500;
     }
-    .formEnd{
+    .formTime{
       margin-left: 15%;
       width: 70%;
       margin-bottom: 4px;
@@ -289,14 +289,14 @@ header {
     .form-control{
       border-radius: 2.1875rem;
     }
-    .formStart{
+    .formDate{
       margin-left: 15%;
       margin-top: 5%;
       width: 70%;
       margin-bottom: 4px;
       font-weight: 500;
     }
-    .formEnd{
+    .formTime{
       margin-left: 15%;
       width: 70%;
       margin-bottom: 4px;
