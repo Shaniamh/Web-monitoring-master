@@ -7,7 +7,7 @@ header {
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url('./images/bg_csv.jpg');
+    background-image: url('./images/write-csv.jpg');
     color: #3a4099;
   }
   header .header-content {

@@ -7,7 +7,7 @@ header {
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background: wheat;
+    background-image: url('./images/fix-issue.jpg');
     color: #3a4099;
   }
   header .header-content {
