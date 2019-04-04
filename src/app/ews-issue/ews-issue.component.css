@@ -49,10 +49,11 @@ header {
     }
     .formDate{
       margin-left:59%;
-      width: 30%;
+      width: 20%;
       margin-top: 5%;
       margin-bottom: 4px;
       font-weight: 500;
+      background: transparent;
     }
     .formTime{
       margin-left: 59%;
@@ -83,6 +84,7 @@ header {
       color: #666666;
       pointer-events: none;
     }
+  
 
   }
   

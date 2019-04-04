@@ -5,11 +5,16 @@
     <form [formGroup]="issue" (ngSubmit)="onSubmit()">
     <div class='formDate'>
     <mat-label>Choose Date</mat-label>
-    <mat-select class="form-control" formControlName="issueDate" required>
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker" class="form-control" formControlName="issueDate" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    <!-- <mat-select class="form-control" formControlName="issueDate" required>
       <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker">
       <mat-datepicker-toggle matSuffix [for]="picker" style="border-radius: 1em"></mat-datepicker-toggle>
       <mat-datepicker touchUi #picker></mat-datepicker>
-  </mat-select>
+  </mat-select> -->
     </div>
       <div class="formTime">
       <mat-label>Choose Time</mat-label>
