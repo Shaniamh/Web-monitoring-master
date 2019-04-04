@@ -24,7 +24,7 @@ header {
     }
     header .header-content h1 {
       position: absolute;
-      top: 60%;
+      top: 50%;
       left: 5%;
       -webkit-transform: translateY(-30%);
       -ms-transform: translateY(-30%);
@@ -48,25 +48,30 @@ header {
     .form-control{
       border-radius: 2.1875rem;
     }
+
+    .mat-error{
+      display: flex;
+      flex-direction: column;
+    }
     .formStart{
       margin-left: 9%;
-      width: 30%;
-      margin-bottom: 4px;
+      width: 28%;
       font-weight: 500;
+      margin-bottom: 4px;
     }
     .formEnd{
       margin-left: 9%;
-      width: 30%;
-      margin-bottom: 4px;
+      width: 28%;
       font-weight: 500;
+      margin-bottom: 4px;
     }
     .formAccount{
       margin-left: 9%;
-      width: 30%;
+      width: 28%;
       font-weight: 500;
     }
     .btn{
-      margin-left: 14%;
+      margin-left: 12%;
       width: 20%;
       margin-top: 2%;
       padding: .5rem 2.5rem;
@@ -81,7 +86,12 @@ header {
     .btn:hover{
       background: #3a4099;
     }
-
+    .btn:disabled, button[disabled]{
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+      pointer-events: none;
+    }
   }
   
   /* untuk device laptop dan dekstop */
@@ -146,6 +156,12 @@ header {
     }
     .btn:hover{
       background: #3a4099;
+    }
+    .btn:disabled, button[disabled]{
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+      pointer-events: none;
     }
   }
 
@@ -213,6 +229,12 @@ header {
     .btn:hover{
       background: #3a4099;
     }
+    .btn:disabled, button[disabled]{
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+      pointer-events: none;
+    }
 
   }
 
@@ -278,6 +300,12 @@ header {
     .btn:hover{
       background: #3a4099;
     }
+    .btn:disabled, button[disabled]{
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+      pointer-events: none;
+    }
   }
 
   /* untuk mobile potrait */
@@ -340,6 +368,12 @@ header {
     }
     .btn:hover{
       background: #3a4099;
+    }
+    .btn:disabled, button[disabled]{
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+      pointer-events: none;
     }
 
   }

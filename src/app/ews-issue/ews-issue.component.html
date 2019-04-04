@@ -2,33 +2,23 @@
     <div class="header-content">
       <h1>Monitoring Issue Twitter</h1>
     </div>
-    <form [formGroup]="time" (ngSubmit)="onSubmit()">
+    <form [formGroup]="issue" (ngSubmit)="onSubmit()">
     <div class='formDate'>
     <mat-label>Choose Date</mat-label>
-    <!-- <input matInput [matDatepicker]="picker" class="form-control" formControlName="issueDate">
-    <mat-datepicker-toggle matSuffix [for]="picker">
-    <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
-    </mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker> -->
-
-    <mat-form-field  class="form-control" formControlName="issueDate">
+    <mat-select class="form-control" formControlName="issueDate" required>
       <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker">
-      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker-toggle matSuffix [for]="picker" style="border-radius: 1em"></mat-datepicker-toggle>
       <mat-datepicker touchUi #picker></mat-datepicker>
-    </mat-form-field>
-    <!-- <mat-select class="form-control" formControlName="issueDate">
-      <mat-option>None</mat-option>
-      <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
-    </mat-select> -->
+  </mat-select>
     </div>
       <div class="formTime">
       <mat-label>Choose Time</mat-label>
-      <mat-select class="form-control" formControlName="issueTime">
+      <mat-select class="form-control" formControlName="issueTime" required>
         <mat-option>None</mat-option>
-        <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+        <mat-option *ngFor="let istime of istimes" [value]="istime">{{istime}}</mat-option>
       </mat-select>
     </div>
-    <button class="btn" type="submit"><i class="fa fa-send"></i> Send</button>
+    <button class="btn" type="submit" [disabled]="issue.invalid"><i class="fa fa-send"></i> Send</button>
   </form>
   </header>
   

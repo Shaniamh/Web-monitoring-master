@@ -14,7 +14,7 @@ import {
   MatIconModule, MatButtonModule, MatSidenavModule, MatToolbarModule,
   MatTableModule, MatPaginatorModule, MatCardModule, MatSelectModule, MatSortModule, MatOptionModule
 } from '@angular/material';
-// baes
+
 import { FormsModule } from '../../node_modules/@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';

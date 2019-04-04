@@ -3,27 +3,42 @@
     <h1>Monitoring Report</h1>
   </div>
   <form [formGroup]="time" (ngSubmit)="onSubmit()">
-    <div class='formStart'>
-  <mat-label>Choose Start Time</mat-label>
-  <mat-select class="form-control" formControlName="startTime">
-    <mat-option>None</mat-option>
-    <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
-  </mat-select>
-</div>
-    <div class="formEnd">
-    <mat-label>Choose End Time</mat-label>
-    <mat-select class="form-control" formControlName="endTime">
-      <mat-option>None</mat-option>
-      <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+  <div class='formStart'>
+   <mat-label>Choose Start Time</mat-label>
+    <mat-select class="form-control" formControlName="startTime" required>
+       <mat-option>None</mat-option>
+       <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
     </mat-select>
+    <div *ngIf="time.controls['startTime'].invalid && (time.controls['startTime'].dirty || time.controls['startTime'].touched)" class="alert alert-danger">
+      <div *ngIf="time.controls['startTime'].errors.required">
+      Start time is required.
+    </div>
   </div>
+  </div>
+    <div class="formEnd">
+      <mat-label>Choose End Time</mat-label>
+       <mat-select class="form-control" formControlName="endTime" required>
+         <mat-option>None</mat-option>
+          <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+        </mat-select>
+        <div *ngIf="time.controls['endTime'].invalid && (time.controls['endTime'].dirty || time.controls['endTime'].touched)" class="alert alert-danger">
+          <div *ngIf="time.controls['endTime'].errors.required">
+          End time is required.
+        </div>
+        </div>
+     </div>
   <div class="formAccount">
-      <mat-label> Choose Account Group</mat-label>
-      <mat-select class="form-control" formControlName="accountGroup">
+    <mat-label> Choose Account Group</mat-label>
+      <mat-select class="form-control" formControlName="accountGroup" required>
         <mat-option>None</mat-option>
         <mat-option *ngFor="let group of group" [value]="group.account_name">{{group.account_name}}</mat-option>
       </mat-select>
+      <div *ngIf="time.controls['accountGroup'].invalid && (time.controls['accountGroup'].dirty || time.controls['accountGroup'].touched)" class="alert alert-danger">
+        <div *ngIf="time.controls['accountGroup'].errors.required">
+        Account group is required.
+      </div>
+      </div>
     </div>
-  <button class="btn" type="submit"><i class="fa fa-send"></i> Send to Telegram</button>
+  <button class="btn" type="submit" [disabled]="time.invalid"><i class="fa fa-send"></i> Send to Telegram</button>
 </form>
 </header>

@@ -67,7 +67,7 @@ header .header-content {
   header .header-content{
     position: absolute;
     top: 7%;
-    left: 5%;
+    left: 50%;
     -webkit-transform: translateY(-30%);
     -ms-transform: translateY(-30%);
     transform: translateY(-30%);
@@ -76,7 +76,7 @@ header .header-content {
   
   h1 {
     font-weight: 700;
-    font-size:40px;
+    font-size:50px;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     margin-bottom: 10%;;
   }
@@ -95,7 +95,7 @@ header .header-content {
     height: 50%;
     overflow-y: auto;
     width: 50%;
-    margin-left: 9%;
+    margin-left: 45%;
     border-radius: 1.5em;
   }
  
@@ -110,14 +110,14 @@ header .header-content {
   header .header-content{
     position: absolute;
     top: 10%;
-    left: 6%;
+    left: 33%;
     transform: translateY(-30%);
     padding: 0 50px;
   }
 
   h1 {
     font-weight: 700;
-    font-size:40px;
+    font-size:25px;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     margin-bottom: 10%;;
   }
@@ -136,7 +136,7 @@ header .header-content {
     height: 70%;
     overflow: auto;
     width: 35%;
-    margin-left: 6%;
+    margin-left: 33%;
     border-radius: 1.5em;
   }
  
@@ -150,14 +150,12 @@ header .header-content {
   }
   header .header-content{
     position: absolute;
-    left: 15%;
+    left: 33%;
   }
-  
- 
   
   h1 {
     font-weight: 700;
-    font-size:40px;
+    font-size:25px;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     margin-bottom: 10%;;
   }
@@ -176,7 +174,7 @@ header .header-content {
     height: 70%;
     overflow: auto;
     width: 35%;
-    margin-left: 6%;
+    margin-left: 30%;
     border-radius: 1.5em;
   }
 }
