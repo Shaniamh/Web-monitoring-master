@@ -88,7 +88,6 @@ header {
       position: absolute;
       top: 35%;
       left: 86%;
-      font-size: 15px;
     }
   }
   
@@ -155,6 +154,11 @@ header {
       background-color: #cccccc;
       color: #666666;
       pointer-events: none;
+    }
+    .mat-datepicker-toggle{
+      position: absolute;
+      top: 33%;
+      left: 84%;
     }
   }
 
@@ -225,6 +229,12 @@ header {
       pointer-events: none;
     }
 
+    .mat-datepicker-toggle{
+      position: absolute;
+      top: 28%;
+      left: 80%;
+    }
+
   }
 
   /* untuk low resolutions tablet, mobiles landscape */
@@ -291,6 +301,12 @@ header {
       color: #666666;
       pointer-events: none;
     }
+    .mat-datepicker-toggle{
+      position: absolute;
+      top: 33%;
+      left: 78%;
+    }
+
   }
 
   /* untuk mobile potrait */
@@ -355,6 +371,10 @@ header {
       color: #666666;
       pointer-events: none;
     }
-
+    .mat-datepicker-toggle{
+      position: absolute;
+      top: 28%;
+      left: 75%;
+    }
   }
   
