@@ -3,30 +3,30 @@
       <h1>Monitoring Issue Twitter</h1>
     </div>
     <form [formGroup]="issue" (ngSubmit)="onSubmit()">
-    <div class='formDate'>
-    <mat-label>Choose Date</mat-label>
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-        <input matInput [matDatepicker]="picker" class="form-control" formControlName="issueDate" required>
+      <div class='formDate'>
+         <mat-label>Choose Date</mat-label>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+          <input matInput [matDatepicker]="picker" class="form-control" formControlName="issueDate" required>
         <div *ngIf="issue.controls['issueDate'].invalid && (issue.controls['issueDate'].dirty || issue.controls['issueDate'].touched)" class="alert alert-danger">
             <div *ngIf="issue.controls['issueDate'].errors.required">
             Date is required.
             </div>
           </div>
-    </div>
+       </div>
       <div class="formTime">
-      <mat-label>Choose Time</mat-label>
-      <mat-select class="form-control" formControlName="issueTime" required>
-        <mat-option>None</mat-option>
-        <mat-option *ngFor="let istime of istimes" [value]="istime">{{istime}}</mat-option>
-      </mat-select>
+        <mat-label>Choose Time</mat-label>
+        <mat-select class="form-control" formControlName="issueTime" required>
+          <mat-option>None</mat-option>
+          <mat-option *ngFor="let istime of istimes" [value]="istime">{{istime}}</mat-option>
+       </mat-select>
       <div *ngIf="issue.controls['issueTime'].invalid && (issue.controls['issueTime'].dirty || issue.controls['issueTime'].touched)" class="alert alert-danger">
           <div *ngIf="issue.controls['issueTime'].errors.required">
           Time is required.
           </div>
         </div>
     </div>
-    <button class="btn" type="submit" [disabled]="issue.invalid"><i class="fa fa-send"></i> Send</button>
+  <button class="btn" type="submit" [disabled]="issue.invalid"><i class="fa fa-send"></i> Send</button>
   </form>
   </header>
   

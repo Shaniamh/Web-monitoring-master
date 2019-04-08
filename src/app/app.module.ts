@@ -14,7 +14,7 @@ import {
   MatIconModule, MatButtonModule, MatSidenavModule, MatToolbarModule,
   MatTableModule, MatPaginatorModule, MatCardModule, MatSelectModule, MatSortModule, MatOptionModule
 } from '@angular/material';
-
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { FormsModule } from '../../node_modules/@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
@@ -53,6 +53,7 @@ import { EwsIssueComponent } from './ews-issue/ews-issue.component';
     AppRoutingModule,
     MatSelectModule,
     MatOptionModule,
+    MatProgressSpinnerModule,
     //baes
     MatNativeDateModule,
     MatDatepickerModule,

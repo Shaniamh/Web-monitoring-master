@@ -2,32 +2,30 @@
   <div class="header-content">
     <h1>Monitoring Kafka</h1>
   </div>
-    <!-- <form id="form-horizontal" [formGroup]="submit"  (ngSubmit)="onSubmit()">
-        <button class="btn" [routerLink]="['/ews-kafka']"><i class="fa fa-refresh"></i> Refresh</button>
-    </form> -->
-
       <div class="example-container mat-elevation-z8">
-          <table mat-table [dataSource]="statuses">
+          <div [ngClass]="dataSource?.filteredData.length > 0 ? 'visible': 'hidden'">
+          <table mat-table [dataSource]="statuses" matSort>
         
             <!-- Date Column -->
-            <div class="colDate">
             <ng-container matColumnDef="DATE">
               <th mat-header-cell *matHeaderCellDef>DATE</th>
               <td mat-cell *matCellDef="let element" > {{element.date}}</td>
             </ng-container>
-          </div>
-        
-            <div class="colStatus">
+
             <!-- Status Column -->
             <ng-container matColumnDef="STATUS">
               <th mat-header-cell *matHeaderCellDef>STATUS</th>
               <td mat-cell *matCellDef="let element">{{element.dataKafka}}</td>
             </ng-container>
-            </div>
 
             <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
           </table>
+          </div>
+          <div [ngClass]="dataSource?.filteredData.length > 0 ? 'hidden': 'visible'">
+            <img class="err" src="http://i67.tinypic.com/2u722kh.jpg">
+            </div>
         </div>
+
   </header>
 

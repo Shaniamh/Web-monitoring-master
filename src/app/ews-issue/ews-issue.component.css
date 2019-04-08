@@ -86,7 +86,7 @@ header {
     }
     .mat-datepicker-toggle{
       position: absolute;
-      top: 38%;
+      top: 35%;
       left: 86%;
     }
   }
@@ -157,7 +157,7 @@ header {
     }
     .mat-datepicker-toggle{
       position: absolute;
-      top: 36%;
+      top: 33%;
       left: 84%;
     }
   }
@@ -231,7 +231,7 @@ header {
 
     .mat-datepicker-toggle{
       position: absolute;
-      top: 30%;
+      top: 28%;
       left: 80%;
     }
 
@@ -303,7 +303,7 @@ header {
     }
     .mat-datepicker-toggle{
       position: absolute;
-      top: 38%;
+      top: 33%;
       left: 78%;
     }
 
@@ -373,7 +373,7 @@ header {
     }
     .mat-datepicker-toggle{
       position: absolute;
-      top: 30%;
+      top: 28%;
       left: 75%;
     }
   }

@@ -14,7 +14,6 @@ const routes: Routes = [
   {path: 'ews-hbase', component: EwsHbaseComponent},
   {path: 'ews-issue', component: EwsIssueComponent},
   {path: 'write-csv', component: WriteCsvComponent}
- 
 ];
 
 @NgModule({
