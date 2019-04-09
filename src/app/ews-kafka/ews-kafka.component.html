@@ -3,9 +3,8 @@
     <h1>Monitoring Kafka</h1>
   </div>
       <div class="example-container mat-elevation-z8">
-          <div [ngClass]="dataSource?.filteredData.length > 0 ? 'visible': 'hidden'">
+          <!-- <div [ngClass]="dataSource?.filteredData.length > 0 ? 'visible': 'hidden'"> -->
           <table mat-table [dataSource]="statuses" matSort>
-        
             <!-- Date Column -->
             <ng-container matColumnDef="DATE">
               <th mat-header-cell *matHeaderCellDef>DATE</th>
@@ -21,10 +20,18 @@
             <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
           </table>
-          </div>
-          <div [ngClass]="dataSource?.filteredData.length > 0 ? 'hidden': 'visible'">
+          <mat-card *ngIf="isLoading" style="display: flex; justify-content: center; align-items: center; margin-left:6%;
+          margin-right: 6%; margin-top: 0%; background: #f4edf5">
+            <mat-progress-spinner *ngIf="isLoading"
+              color="primary" 
+              mode="indeterminate">
+            </mat-progress-spinner>
+          </mat-card>
+          
+          <!-- </div> -->
+          <!-- <div [ngClass]="dataSource?.filteredData.length > 0 ? 'hidden': 'visible'">
             <img class="err" src="http://i67.tinypic.com/2u722kh.jpg">
-            </div>
+            </div> -->
         </div>
 
   </header>

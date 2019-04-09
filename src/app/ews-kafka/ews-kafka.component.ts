@@ -15,6 +15,7 @@ export class EwsKafkaComponent implements OnInit {
   statuses: Array<any>;
   todayDate = new Date();
   displayedColumns = ['DATE', 'STATUS'];
+  isLoading = true;
 
 constructor(private statusKafkaService : StatusKafkaService,public datepipe: DatePipe) {
   this.submit = new FormGroup({
@@ -26,24 +27,15 @@ constructor(private statusKafkaService : StatusKafkaService,public datepipe: Dat
   this.statusKafkaService.findByDate(formatDate).subscribe(data => {
     this.statuses = data;
   });
-  if(this.statuses.length === 0){
-    Swal.fire({
-      title: 'Oopss Sorry...',
-      type: 'error',
-      html:
-        'Now, the data is empty',
-      focusConfirm: false,
-      confirmButtonText:
-        'OK!',
-    })
-  }
 }
 
 ngOnInit(){
   let formatDate =this.datepipe.transform(this.todayDate, 'yyyyMMdd');
   this.statusKafkaService.findByDate(formatDate).subscribe(data => {
+    this.isLoading = false; 
     this.statuses = data;
-  });
+  },
+  error => this.isLoading = false);
 }
 
 

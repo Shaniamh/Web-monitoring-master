@@ -12,7 +12,7 @@ import { WriteCsvComponent } from './write-csv/write-csv.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {
   MatIconModule, MatButtonModule, MatSidenavModule, MatToolbarModule,
-  MatTableModule, MatPaginatorModule, MatCardModule, MatSelectModule, MatSortModule, MatOptionModule
+  MatTableModule, MatPaginatorModule, MatSelectModule, MatSortModule, MatOptionModule
 } from '@angular/material';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { FormsModule } from '../../node_modules/@angular/forms';
@@ -23,6 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatInputModule} from '@angular/material';
 import { EwsIssueComponent } from './ews-issue/ews-issue.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 
