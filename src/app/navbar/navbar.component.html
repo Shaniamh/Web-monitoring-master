@@ -12,20 +12,22 @@
     </a>
     <span class="example-spacer"></span>
     <div fxShow="true" fxHide.lt-md="true">
-      <a mat-button routerLink="/ews-kafka" routerLinkActive="active">Monitoring Kafka</a>
-      <a mat-button routerLink="/ews-hbase">Monitoring Hbase</a>
-      <a mat-button routerLink="/ews-issue">Monitoring Issue</a>
-      <a mat-button routerLink="/write-csv">Monitoring Report</a>
+      <a id="home" mat-button routerLink="/beranda" routerLinkActive="active"  routerLinkActiveOptions="{exact:true}">Home</a>
+      <a id="kaf" mat-button routerLink="/ews-kafka" routerLinkActive="active"  routerLinkActiveOptions="{exact:true}">Monitoring Kafka</a>
+      <a id="hbs" mat-button routerLink="/ews-hbase" routerLinkActive="active"  routerLinkActiveOptions="{exact:true}">Monitoring Hbase</a>
+      <a id="iss" mat-button routerLink="/ews-issue" routerLinkActive="active"  routerLinkActiveOptions="{exact:true}">Monitoring Issue</a>
+      <a id="csv" mat-button routerLink="/write-csv" routerLinkActive="active"  routerLinkActiveOptions="{exact:true}">Monitoring Report</a>
     </div>
 
   </mat-toolbar>
   <mat-sidenav-container fxFlexFill>
     <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over" opened="false">
       <div fxLayout="column">
-        <a mat-button routerLink="/ews-kafka">Monitoring Kafka</a>
-        <a mat-button routerLink="/ews-hbase">Monitoring Hbase</a>
-        <a mat-button routerLink="/ews-issue">Monitoring Issue</a>
-        <a mat-button routerLink="/write-csv">Monitoring Report</a>
+        <a id="home" mat-button routerLink="/beranda" routerLinkActive="active"  routerLinkActiveOptions="{exact:true}">Home</a>
+        <a id="kaf" mat-button routerLink="/ews-kafka" routerLinkActive="active"  routerLinkActiveOptions="{exact:true}">Monitoring Kafka</a>
+        <a id="hbs" mat-button routerLink="/ews-hbase" routerLinkActive="active"  routerLinkActiveOptions="{exact:true}">Monitoring Hbase</a>
+        <a id="iss" mat-button routerLink="/ews-issue" routerLinkActive="active"  routerLinkActiveOptions="{exact:true}">Monitoring Issue</a>
+        <a id="csv" mat-button routerLink="/write-csv" routerLinkActive="active"  routerLinkActiveOptions="{exact:true}">Monitoring Report</a>
       </div>
     </mat-sidenav>
   <mat-sidenav-content fxFlexFill>

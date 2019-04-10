@@ -37,12 +37,10 @@ header {
     }
     .form-control:focus {
       border-color: #f9a11b;
-      background-color: transparent;
     }
 
     .form-control:hover {
       border-color: #f9a11b;
-      background-color: transparent;
     }
 
     .form-control{
@@ -114,11 +112,9 @@ header {
     }
     .form-control:focus {
       border-color: #f9a11b;
-      background-color: transparent;
     }
     .form-control:hover {
       border-color: #f9a11b;
-      background-color: transparent;
     }
     .form-control{
       border-radius: 2.1875rem;
@@ -184,12 +180,10 @@ header {
     }
     .form-control:focus {
       border-color: #f9a11b;
-      background-color: transparent;
     }
 
     .form-control:hover {
       border-color: #f9a11b;
-      background-color: transparent;
     }
 
     .form-control{
@@ -247,7 +241,7 @@ header {
     header .header-content h1{
       position: absolute;
       top: 90%;
-      left: 15%;
+      left: 30%;
       font-weight: 700;
       margin-top: -10px;
       margin-bottom: 0;
@@ -255,12 +249,10 @@ header {
     }
     .form-control:focus {
       border-color: #f9a11b;
-      background-color: transparent;
     }
 
     .form-control:hover {
       border-color: #f9a11b;
-      background-color: transparent;
     }
 
     .form-control{
@@ -317,19 +309,17 @@ header {
     header .header-content h1{
       position: absolute;
       top: 70%;
-      left: 15%;
+      left: 18%;
       font-weight: 700;
       margin-top: -10px;
-      font-size: 30px;
+      font-size: 25px;
     }
     .form-control:focus {
       border-color: #f9a11b;
-      background-color: transparent;
     }
 
     .form-control:hover {
       border-color: #f9a11b;
-      background-color: transparent;
     }
 
     .form-control{

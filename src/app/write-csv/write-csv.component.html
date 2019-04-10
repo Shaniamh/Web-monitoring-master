@@ -28,7 +28,7 @@
         </div>
      </div>
   <div class="formAccount">
-    <mat-label> Choose Account Group</mat-label>
+    <mat-label> Choose Account Group on Telegram</mat-label>
       <mat-select class="form-control" formControlName="accountGroup" required>
         <mat-option>None</mat-option>
         <mat-option *ngFor="let group of group" [value]="group.account_name">{{group.account_name}}</mat-option>
@@ -39,6 +39,6 @@
       </div>
       </div>
     </div>
-  <button class="btn" type="submit" [disabled]="time.invalid"><i class="fa fa-send"></i> Send to Telegram</button>
+  <button class="btn" type="submit" [disabled]="time.invalid"><i class="fa fa-send"></i> Send</button>
 </form>
 </header>
