@@ -4,7 +4,7 @@
     </div>
     <form [formGroup]="issue" (ngSubmit)="onSubmit()">
       <div class='formDate'>
-         <mat-label>Choose Date</mat-label>
+         <mat-label>Choose a Date</mat-label>
           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
           <mat-datepicker #picker></mat-datepicker>
           <input matInput [matDatepicker]="picker" class="form-control" formControlName="issueDate" required>
@@ -15,7 +15,7 @@
           </div>
        </div>
       <div class="formTime">
-        <mat-label>Choose Time</mat-label>
+        <mat-label>Choose a Time</mat-label>
         <mat-select class="form-control" formControlName="issueTime" required>
           <mat-option>None</mat-option>
           <mat-option *ngFor="let istime of istimes" [value]="istime">{{istime}}</mat-option>

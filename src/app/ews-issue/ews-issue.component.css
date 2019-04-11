@@ -53,7 +53,6 @@ header {
       margin-top: 5%;
       margin-bottom: 4px;
       font-weight: 500;
-      background: transparent;
     }
     .formTime{
       margin-left: 59%;
@@ -85,9 +84,9 @@ header {
       pointer-events: none;
     }
     .mat-datepicker-toggle{
-      position: absolute;
-      top: 35%;
-      left: 86%;
+      position: fixed;
+      margin-left: 19%;
+      margin-top: 1.5%;
     }
   }
   
@@ -156,9 +155,9 @@ header {
       pointer-events: none;
     }
     .mat-datepicker-toggle{
-      position: absolute;
-      top: 33%;
-      left: 84%;
+      position: fixed;
+      margin-left: 11%;
+      margin-top: 1.5%;
     }
   }
 
@@ -230,9 +229,9 @@ header {
     }
 
     .mat-datepicker-toggle{
-      position: absolute;
-      top: 28%;
-      left: 80%;
+      position: fixed;
+      margin-left: 53%;
+      margin-top: 2%;
     }
 
   }
@@ -302,9 +301,9 @@ header {
       pointer-events: none;
     }
     .mat-datepicker-toggle{
-      position: absolute;
-      top: 33%;
-      left: 78%;
+      position: fixed;
+      margin-left: 43%;
+      margin-top: 3%;
     }
 
   }
@@ -372,9 +371,9 @@ header {
       pointer-events: none;
     }
     .mat-datepicker-toggle{
-      position: absolute;
-      top: 28%;
-      left: 75%;
+      position: fixed;
+      margin-left: 30%;
+      margin-top: 4.5%;
     }
   }
   

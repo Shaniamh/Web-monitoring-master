@@ -22,18 +22,7 @@ html {
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   }
   
-  body .calendar p {
-    font-size: 16px;
-    color: gray;
-    margin-top: -5px;
-  }
-  
-  body .tableName p {
-    font-size: 16px;
-    color: gray;
-    margin-top: 5px;
-  }
-  
+
   body .calendar{
     margin-left: 180px;
     width: 320px;
@@ -107,35 +96,33 @@ html {
     border-color: #f9a11b;
   }
 
-
-  
-  @media screen and (min-width: 368px) and (max-width: 575px) {
+  @media (min-width: 320px) and (max-width: 384px){
     body {
       background-size: 120% 110%;
     }
     h1 {
       padding-top: 40px;
-      padding-left: 30px;
-      font-size: 30px;
+      padding-left: 16%;
+      font-size: 25px;
       font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     }
     body .calendar {
-      margin-left: 32px;
-      width: 200px;
+      margin-left: 15%;
+      width: 70%;
       font-weight: 500;
       color: #3a4099;
     }
     body .datepicker {
-      margin-left: 190px;
+      margin-left: 72%;
     }
     body .tableName {
-      margin-left: 32px;
-      width: 200px;
+      margin-left: 15%;
+      width: 70%;
       font-weight: 500;
       color: #3a4099;
     }
     button {
-      margin-left: 30px;
+      margin-left: 15%;
       margin-top: 20px;
       text-transform: uppercase;
       cursor: pointer;
@@ -150,14 +137,15 @@ html {
         pointer-events: none;
       }
     body .example-container {
-      margin-top: -185px;
-      left: 265px;
-      width: 285px;
-      height: 330px;
+      margin-top: 10%;
+      left: 10%;
+      width: 80%;
+      height: 35%;
     }
   
     img {
-      margin-left: 23px;
+      margin-left: 23%;
+      margin-top:3%;
     }
     .form-control{
         border-radius: 2.1875rem;
@@ -169,8 +157,69 @@ html {
       .form-control:hover {
         border-color: #f9a11b;
       }
+  }
   
+  @media screen and (min-width: 385px) and (max-width: 575px) {
+    body {
+      background-size: 120% 110%;
+    }
+    h1 {
+      padding-top: 40px;
+      padding-left: 20%;
+      font-size: 30px;
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+    body .calendar {
+      margin-left: 15%;
+      width: 70%;
+      font-weight: 500;
+      color: #3a4099;
+    }
+    body .datepicker {
+      margin-left: 72%;
+    }
+    body .tableName {
+      margin-left: 15%;
+      width: 70%;
+      font-weight: 500;
+      color: #3a4099;
+    }
+    button {
+      margin-left: 15%;
+      margin-top: 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .btn:hover{
+        background: #3a4099;
+      }
+      .btn:disabled, button[disabled]{
+        border: 1px solid #999999;
+        background-color: #cccccc;
+        color: #666666;
+        pointer-events: none;
+      }
+    body .example-container {
+      margin-top: 10%;
+      left: 10%;
+      width: 80%;
+      height: 40%;
+    }
   
+    img {
+      margin-left: 25%;
+      margin-top:3%;
+    }
+    .form-control{
+        border-radius: 2.1875rem;
+      }
+      .form-control:focus {
+        border-color: #f9a11b;
+      }
+  
+      .form-control:hover {
+        border-color: #f9a11b;
+      }
   }
   
   @media screen and (min-width: 576px) and (max-width: 783px) {

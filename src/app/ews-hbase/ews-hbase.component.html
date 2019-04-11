@@ -11,7 +11,6 @@
       <!-- Calendar -->
       <form class="form-horizontal" [formGroup]="date" (ngSubmit)="onSubmit()">
         <div class="calendar">
-          <!-- <p>Choose a Date</p> -->
           <mat-label>Choose a Date</mat-label>
           <div class ="req" *ngIf="date.controls['date'].invalid && (date.controls['date'].dirty || date.controls['date'].touched)" class="alert alert-danger">
               <div *ngIf="date.controls['date'].errors.required">
@@ -27,7 +26,7 @@
     
         <!-- Table Name -->
         <div class="tableName">
-          <mat-label>Choose a Table Name</mat-label>
+          <mat-label>Choose a Table name</mat-label>
           <mat-select  class="form-control" formControlName="table" required>
             <mat-option>None</mat-option>
             <mat-option *ngFor="let tableName of table" [value]="tableName">{{tableName}}</mat-option>
