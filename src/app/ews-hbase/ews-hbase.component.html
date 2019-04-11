@@ -1,3 +1,67 @@
-<p>
-  ews-hbase works!
-</p>
+<html>
+  <body>
+    <header>
+      <!-- Title Website -->
+      <div class="title-website">
+        <h1>Monitoring Hbase</h1>
+      </div>
+    </header>
+
+    <!-- Content -->
+      <!-- Calendar -->
+      <form class="form-horizontal" [formGroup]="date" (ngSubmit)="onSubmit()">
+        <div class="calendar">
+          <!-- <p>Choose a Date</p> -->
+          <mat-label>Choose a Date</mat-label>
+          <div class ="req" *ngIf="date.controls['date'].invalid && (date.controls['date'].dirty || date.controls['date'].touched)" class="alert alert-danger">
+              <div *ngIf="date.controls['date'].errors.required">
+              The date is required.
+            </div>
+            </div>
+          <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker" class="form-control" formControlName="date" required>
+        </div>
+        <div class="datepicker">
+            <mat-datepicker-toggle class="date" matSuffix [for]="picker" #picker></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </div>
+    
+        <!-- Table Name -->
+        <div class="tableName">
+          <mat-label>Choose a Table Name</mat-label>
+          <mat-select  class="form-control" formControlName="table" required>
+            <mat-option>None</mat-option>
+            <mat-option *ngFor="let tableName of table" [value]="tableName">{{tableName}}</mat-option>
+          </mat-select>
+          <div *ngIf="date.controls['table'].invalid && (date.controls['table'].dirty || date.controls['table'].touched)" class="alert alert-danger">
+              <div *ngIf="date.controls['table'].errors.required">
+              Table name is required.
+            </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+      <button class="btn" (click)="onSubmit()" [disabled]="date.invalid">show</button>
+      <img *ngIf="loading" src="assets/loader.gif">
+    </form>
+
+      <!-- Table Show Data-->
+      <div class="example-container mat-elevation-z8">
+        <table mat-table [dataSource]="statuses">
+          <!-- Date Column -->
+          <ng-container matColumnDef="date">
+            <th mat-header-cell *matHeaderCellDef>Date</th>
+            <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+          </ng-container>
+            
+          <!-- Status Column -->
+           <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef>Status</th>
+            <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+          </ng-container>
+            
+          <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr> 
+        </table>
+      </div> 
+  </body>
+</html>

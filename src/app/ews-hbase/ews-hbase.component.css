@@ -1,0 +1,356 @@
+html {
+    min-height:100%;
+    position:relative;
+    width:100%;
+  }
+  
+  body {
+    background-image: url('./images/monitor-hbase.jpg');
+    background-size: 80% 130%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 610px;
+    /* width: 100%; */
+  }
+  
+  h1{
+    color: #424ea1;
+    font-weight: bold;
+    font-size: 45px;
+    padding-left: 150px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  body .calendar p {
+    font-size: 16px;
+    color: gray;
+    margin-top: -5px;
+  }
+  
+  body .tableName p {
+    font-size: 16px;
+    color: gray;
+    margin-top: 5px;
+  }
+  
+  body .calendar{
+    margin-left: 180px;
+    width: 320px;
+    font-weight: 500;
+    color: #3a4099;
+
+  }
+  
+  body .datepicker {
+    margin-left: 450px;
+    margin-top: -40px;
+  }
+  
+  body .tableName {
+    margin-right: 400px;
+    margin-left: 180px;
+    width: 320px;
+    border-color: grey;
+    font-weight: 500;
+    color: #3a4099;
+  }
+  
+  button {
+    background-color: #f8a118;
+    color: white;
+    font-weight: 500;
+    border-radius: 20px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: 180px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .btn:hover{
+    background: #3a4099;
+  }
+  .btn:disabled, button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    pointer-events: none;
+  }
+  body .example-container {
+    position: relative;
+    width: 350px;
+    height: 255px;
+    left: 170px;
+    margin-top: 15px;
+    overflow: auto;
+    background-color: white;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  img {
+    margin-left: 150px;
+  }
+  .form-control{
+    border-radius: 2.1875rem;
+  }
+  .form-control:focus {
+    border-color: #f9a11b;
+  }
+
+  .form-control:hover {
+    border-color: #f9a11b;
+  }
+
+
+  
+  @media screen and (min-width: 368px) and (max-width: 575px) {
+    body {
+      background-size: 120% 110%;
+    }
+    h1 {
+      padding-top: 40px;
+      padding-left: 30px;
+      font-size: 30px;
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+    body .calendar {
+      margin-left: 32px;
+      width: 200px;
+      font-weight: 500;
+      color: #3a4099;
+    }
+    body .datepicker {
+      margin-left: 190px;
+    }
+    body .tableName {
+      margin-left: 32px;
+      width: 200px;
+      font-weight: 500;
+      color: #3a4099;
+    }
+    button {
+      margin-left: 30px;
+      margin-top: 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .btn:hover{
+        background: #3a4099;
+      }
+      .btn:disabled, button[disabled]{
+        border: 1px solid #999999;
+        background-color: #cccccc;
+        color: #666666;
+        pointer-events: none;
+      }
+    body .example-container {
+      margin-top: -185px;
+      left: 265px;
+      width: 285px;
+      height: 330px;
+    }
+  
+    img {
+      margin-left: 23px;
+    }
+    .form-control{
+        border-radius: 2.1875rem;
+      }
+      .form-control:focus {
+        border-color: #f9a11b;
+      }
+  
+      .form-control:hover {
+        border-color: #f9a11b;
+      }
+  
+  
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 783px) {
+    body {
+      background-size: 115% 115%;
+    }
+    h1 {
+      font-size: 36px;
+      padding-left: 35px;
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+    body .calendar {
+      margin-left: 50px;
+      width: 260px;
+      font-weight: 500;
+      color: #3a4099;
+    }
+  
+    body .datepicker {
+      margin-left: 270px;
+    }
+  
+    body .tableName {
+      margin-left: 50px;
+      width: 260px;
+      font-weight: 500;
+      color: #3a4099;
+    }
+  
+    button {
+      margin-left: 50px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .btn:hover{
+        background: #3a4099;
+      }
+      .btn:disabled, button[disabled]{
+        border: 1px solid #999999;
+        background-color: #cccccc;
+        color: #666666;
+        pointer-events: none;
+      }
+    body .example-container {
+      left: 35px;
+      width: 300px;
+    }
+  
+    img {
+      margin-left: 50px;
+    }
+    .form-control{
+        border-radius: 2.1875rem;
+      }
+      .form-control:focus {
+        border-color: #f9a11b;
+      }
+  
+      .form-control:hover {
+        border-color: #f9a11b;
+      }
+  
+  
+  }
+  
+  @media screen and (min-width: 784px) and (max-width: 991px) {
+    body {
+      background-size: 95% 120%;
+    }
+    h1 {
+      font-size: 40px;
+      padding-left: 80px;
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+    body .calendar {
+      margin-left: 100px;
+      width: 300px;
+      font-weight: 500;
+      color: #3a4099;
+    }
+  
+    body .datepicker {
+      margin-left: 350px;
+    }
+  
+    body .tableName {
+      margin-left: 100px;
+      width: 300px;
+      font-weight: 500;
+      color: #3a4099;
+    }
+  
+    button {
+      margin-left: 100px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .btn:hover{
+        background: #3a4099;
+      }
+      .btn:disabled, button[disabled]{
+        border: 1px solid #999999;
+        background-color: #cccccc;
+        color: #666666;
+        pointer-events: none;
+      }
+  
+    body .example-container {
+      left: 85px;
+      width: 340px;
+    }
+    .form-control{
+        border-radius: 2.1875rem;
+      }
+      .form-control:focus {
+        border-color: #f9a11b;
+      }
+  
+      .form-control:hover {
+        border-color: #f9a11b;
+      }
+  
+  
+  }
+  
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      body {
+        background-size: 83% 120%
+      }
+      h1 {
+        font-size: 43px;
+        padding-left: 130px;
+         font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      }
+      body .calendar {
+        width: 320px;
+        margin-left: 145px;
+        font-weight: 500;
+        color: #3a4099;
+      }
+  
+      body .datepicker {
+        margin-left: 420px;
+      }
+    
+      body .tableName {
+        width: 320px;
+        margin-left: 145px;
+        font-weight: 500;
+        color: #3a4099;
+      }
+    
+      body .example-container {
+        left: 135px;
+        width: 350px;
+      }
+      button {
+        margin-left: 145px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      .btn:hover{
+        background: #3a4099;
+      }
+      .btn:disabled, button[disabled]{
+        border: 1px solid #999999;
+        background-color: #cccccc;
+        color: #666666;
+        pointer-events: none;
+      }
+      .form-control{
+        border-radius: 2.1875rem;
+      }
+      .form-control:focus {
+        border-color: #f9a11b;
+      }
+  
+      .form-control:hover {
+        border-color: #f9a11b;
+      }
+    
+    }
