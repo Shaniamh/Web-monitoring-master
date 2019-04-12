@@ -19,7 +19,7 @@ header {
   /* untuk dekstop higher resolution */
   @media (min-width: 1281px) {
     header {
-      min-height: 80%;
+      min-height: 100%;
       width: 100%;
     }
     header .header-content h1 {
