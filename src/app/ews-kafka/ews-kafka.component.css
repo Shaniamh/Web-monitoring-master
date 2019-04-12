@@ -37,7 +37,8 @@ header .header-content {
     font-weight: 700;
     font-size:50px;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    margin-bottom: 10%;;
+    margin-bottom: 10%;
+    margin-top: -2%;
   }
 
   table {
