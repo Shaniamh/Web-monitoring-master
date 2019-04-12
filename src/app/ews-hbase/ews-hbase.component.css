@@ -86,7 +86,7 @@ header .header-content {
   .example-container {
     position: relative;
     width: 350px;
-    height: 255px;
+    height: 35%;
     left: 170px;
     margin-top: 20px;
     overflow: auto;
