@@ -316,8 +316,8 @@ header {
     }
     header .header-content h1{
       position: absolute;
-      top: 70%;
-      left: 15%;
+      top: 60%;
+      left: 10%;
       font-weight: 700;
       font-size: 25px;
     }

@@ -16,10 +16,11 @@ header {
     width: 100%;
   }
 
+
   /* untuk dekstop higher resolution */
   @media (min-width: 1281px) {
     header {
-      min-height: 80%;
+      min-height: 100%;
       width: 100%;
     }
     header .header-content h1 {
@@ -303,7 +304,7 @@ header {
   /* untuk mobile potrait */
   @media (min-width: 320px) and (max-width: 480px) {
     header {
-      min-height: 85%;
+      min-height: 100%;
       width: 100%;
     }
     header .header-content h1{
