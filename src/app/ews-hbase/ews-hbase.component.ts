@@ -40,7 +40,7 @@ constructor(
       Swal.fire({
         type: 'error',
         title: 'Oops...',
-        text: 'Waktu scan telah melebihi batas. Silahkan coba lagi'
+        text: 'Scan time has exceeded the limit. Please try again'
       })
       this.loading = false;
     }, 900000);

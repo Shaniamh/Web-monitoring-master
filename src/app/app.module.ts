@@ -24,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatInputModule} from '@angular/material';
 import { EwsIssueComponent } from './ews-issue/ews-issue.component';
 import {MatCardModule} from '@angular/material/card';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 
@@ -39,7 +40,6 @@ import {MatCardModule} from '@angular/material/card';
     EwsIssueComponent
   ],
   imports: [
-    //shania
     BrowserModule, BrowserAnimationsModule, FlexLayoutModule,
     FormsModule,
     MatButtonModule, 
@@ -55,12 +55,12 @@ import {MatCardModule} from '@angular/material/card';
     MatSelectModule,
     MatOptionModule,
     MatProgressSpinnerModule,
-    //baes
     MatNativeDateModule,
     MatDatepickerModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatInputModule
+    MatInputModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

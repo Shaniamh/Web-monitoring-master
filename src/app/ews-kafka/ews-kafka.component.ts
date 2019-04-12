@@ -3,7 +3,8 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { DatePipe } from '@angular/common';
 import { StatusKafkaService } from '../shared/status/status-kafka.service';
 import Swal from 'sweetalert2';
-import { bypassSanitizationTrustStyle } from '@angular/core/src/sanitization/bypass';
+import { NgxSpinnerService } from 'ngx-spinner';
+
 @Component({
   selector: 'app-ews-kafka',
   templateUrl: './ews-kafka.component.html',
@@ -37,6 +38,7 @@ ngOnInit(){
     this.statuses = data;
   },
   error => 
-    this.isLoading = false);
+     this.isLoading = false
+     );
 }
 }
